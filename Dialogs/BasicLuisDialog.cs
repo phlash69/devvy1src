@@ -33,7 +33,7 @@ namespace Microsoft.Bot.Sample.LuisBot
             await this.ShowLuisResult(context, result);
         }
         
-        [LuisIntent("How Do I")]
+        [LuisIntent("HowDoI")]
         public async Task GreetingIntent(IDialogContext context, LuisResult result)
         {
             await this.ShowLuisResult(context, result);
