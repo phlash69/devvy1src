@@ -6,6 +6,8 @@ using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Luis;
 using Microsoft.Bot.Builder.Luis.Models;
 
+using System.Collections.Generic;
+
 namespace Microsoft.Bot.Sample.LuisBot
 {
     // For more information about this template visit http://aka.ms/azurebots-csharp-luis
@@ -28,12 +30,6 @@ namespace Microsoft.Bot.Sample.LuisBot
         // Go to https://luis.ai and create a new intent, then train/publish your luis app.
         // Finally replace "Gretting" with the name of your newly created intent in the following handler
         [LuisIntent("Greeting")]
-        public async Task GreetingIntent(IDialogContext context, LuisResult result)
-        {
-            await this.ShowLuisResult(context, result);
-        }
-        
-        [LuisIntent("HowDoI")]
         public async Task GreetingIntent(IDialogContext context, LuisResult result)
         {
             await this.ShowLuisResult(context, result);
